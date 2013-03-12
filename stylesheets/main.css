@@ -1896,3 +1896,9 @@ h1.titlecontent{
 .clear{
   clear: both;
 }
+
+span.error{color:red;text-align:left; font-size:11px; display:block; vertical-align:top}
+
+#message{
+  color: #26CA41;
+}

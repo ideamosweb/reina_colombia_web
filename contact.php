@@ -150,38 +150,44 @@
     					
     					<div class="lined">
     						<h2><span class="light">ENVIAME</span> UN EMAIL</h2>
-    						<h5>Fields market with <span class="theme-clr">*</span> are required</h5>
+    						<h5>Campos con <span class="theme-clr">*</span> son requeridos</h5>
     						<span class="bolded-line"></span>
     					</div>
-    					
-    					<form action="#" class="form contact">
-    						<div class="row">
-    							<div class="span3">
-    								<label for="inpt-name">Nombre y Apellido<span class="theme-clr">*</span></label>
-    								<input type="text" name="inpt-name" value="" id="inpt-name" class="span3" />
-    							</div>
-    							<div class="span3">
-    								<label for="inpt-phone">Número de Teléfono<span class="theme-clr">*</span></label>
-    								<input type="tel" name="inpt-name" value="" id="inpt-phone" class="span3" />
-    							</div>
-    							<div class="span3">
-    								<label for="inpt-email">Dirección E-mail</label>
-    								<input type="email" name="inpt-name" value="" id="inpt-email" class="span3" />
-    							</div>
-    						</div>
-    						<div class="row">
-    							<div class="span9">
-    								<label for="txtarea">Su Mensaje<span class="theme-clr">*</span></label>
-    								<textarea name="txtarea" rows="7" class="span9" id="txtarea"></textarea>
-    							</div>
-    						</div>
-    						<div class="row">
-    							<div class="span9">
-    								<button class="btn btn-theme no-bevel pull-right" type="submit">ENVIAR MENSAJE</button>
-    							</div>
-    						</div>
-    					</form>
-    					
+    					<div id="contactform">
+        					<form action="" class="form contact">
+        						<div class="row">
+        							<div class="span3">
+        								<label for="inpt-name">Nombre y Apellido<span class="theme-clr">*</span></label>
+        								<input type="text" name="inpt-name" value="" id="inpt-name" class="span3" />
+                                        <span class="error" id="name_error">Por favor digite nombre!</span>
+        							</div>
+        							<div class="span3">
+        								<label for="inpt-phone">Número de Teléfono<span class="theme-clr">*</span></label>
+        								<input type="tel" name="inpt-name" value="" id="inpt-phone" class="span3" />
+                                        <span class="error" id="phone_error">Por favor digite un número de teléfono!</span>
+                                        <span class="error" id="phone_error2">Por favor digite un número valido!</span>
+        							</div>
+        							<div class="span3">
+        								<label for="inpt-email">Dirección E-mail<span class="theme-clr">*</span></label>
+        								<input type="email" name="inpt-name" value="" id="inpt-email" class="span3" />
+                                        <span class="error" id="email_error">Por favor digite email!</span>
+                                        <span class="error" id="email_error2">E-mail invalido!</span>
+        							</div>
+        						</div>
+        						<div class="row">
+        							<div class="span9">
+        								<label for="txtarea">Su Mensaje<span class="theme-clr">*</span></label>
+        								<textarea name="txtarea" rows="7" class="span9" id="txtarea"></textarea>
+                                        <span class="error" id="msg_error">Por favor digite un mensaje!</span>
+        							</div>
+        						</div>
+        						<div class="row">
+        							<div class="span9">
+        								<a class="btn btn-theme no-bevel pull-right" onclick="validate_contact()">ENVIAR MENSAJE</a>
+        							</div>
+        						</div>
+        					</form>
+    					</div>
     				</article>
     				
     				

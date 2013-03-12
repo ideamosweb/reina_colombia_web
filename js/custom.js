@@ -3,6 +3,9 @@
 //  ========== 
 
 $(document).ready(function() {
+
+	//Hide errors in contact form
+	$('.error').hide();
     
     //  ========== 
     //  = Tweet loader = 
@@ -123,3 +126,71 @@ $(document).ready(function() {
     
     
 });
+
+function validate_contact(){
+	jQuery('.error').hide();
+
+	var name = $('#inpt-name').val();
+	var phone = $('#inpt-phone').val();
+	var intRegex = /^\d+$/;
+	var email = $('#inpt-email').val();
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var msg = $('#txtarea').val();
+
+	if(name == ""){
+		$("span#name_error").show();
+        $("#inpt-name").focus();
+        return false;
+	}
+
+	if(phone == ""){
+		$("span#phone_error").show();
+        $("#inpt-phone").focus();
+        return false;
+	}
+
+	if(!intRegex.test(phone)) {
+	   $("span#phone_error2").show();
+       $("#inpt-phone").focus();
+       return false;
+	}
+
+	if(email == ""){
+		$("span#email_error").show();
+        $("#inpt-email").focus();
+        return false;
+	}
+
+
+	if(!emailReg.test(email)) {
+	  $("span#email_error2").show();
+	  $("inpt-email").focus();
+	  return false;
+	}
+
+	if(msg == ""){
+		$("span#name_error").show();
+        $("#txtarea").focus();
+        return false;
+	}
+
+	var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone + '&msg=' + msg;
+		//alert (dataString);return false;
+		
+	$.ajax({
+      type: "POST",
+      url: "contact_process.php",
+      data: dataString,
+      success: function(data) {
+      	//alert(data);
+        $('#contactform').html("<div id='message'></div>");
+        $('#message').html("<strong>Datos enviados satisfactoriamente!</strong>")
+        .append("<p>Estaremos en contacto muy pronto.</p>")
+        .hide()
+        .fadeIn(1500, function() {
+          $('#message');
+        });
+      }
+    });
+    return false;
+}
