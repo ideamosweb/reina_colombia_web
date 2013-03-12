@@ -1,0 +1,152 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Calibri,Arial;
+	background:url(../../images/fondo-sitio.jpg);
+}
+a{
+	color:#1f5fe7;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img{
+	border:0;
+}
+p{
+	margin:5px 0 5px 0;
+}
+.tabla_principal td,.tabla_principal th{
+	padding:5px;
+	font-size:12px;
+}
+.tabla_principal img{
+	cursor:pointer;
+}
+
+.table_view td{
+	margin:0;
+	padding:5px;
+	border-bottom:#CCC 1px solid;
+}
+.clear {
+	clear: both;
+}
+#header{
+	width:960px;
+	margin: 0 auto;
+}
+
+/*
+----------------------------------------------------
+-------------------- CONTENT ----------------------- 
+----------------------------------------------------
+*/ 
+
+#content{
+	background: url(../../images/mod-contacto/sombra-sup-contac.png) no-repeat top, #FFF;
+	border: #e4e4e4 1px solid;
+	width:960px;
+	margin: 0 auto;
+	margin-top:8px;
+}
+
+#content #main_menu{
+	width:230px;
+	float:left;
+	border-right:#CCC solid 1px;
+}
+
+#content #main_menu ul{
+	list-style:none;
+	margin:0 auto;
+}
+#content #main_menu ul li{
+	float:left;
+	margin:0;
+	width:210px;
+	text-align:center;
+	padding:10px;
+	cursor:pointer;
+	border-bottom:1px #CCC solid;
+}
+
+#content #main_menu ul li:hover, #content #main_menu ul .selected{
+	background:#EFEFEF;
+}
+
+#content #main_menu ul li a{
+	font-size:24px;
+	font-style:italic;
+	font-weight:bolder;
+}
+
+#content #contenido_ajax{
+	padding: 20px;
+	width:680px;
+	float:right;
+}
+
+.search_form{
+	padding:5px;
+	margin-bottom:10px;
+	font-size:12px;
+}
+
+.search_form h3{
+	font-size:14px;
+	font-weight:bold;
+	margin: 0 0 5px 0;
+}
+
+.search_form select{
+	max-width:400px;
+	font-size:12px;
+}
+.search_form input{
+	font-size:12px;
+}
+
+#edit_form input, #edit_form textarea{
+	width:550px;
+}
+
+.nota{
+	font-size:10px;
+	color:#666;
+}
+.link{
+	cursor:pointer;
+}
+/*
+----------------------------------------------------
+-------------------- FOOTER ----------------------- 
+----------------------------------------------------
+*/ 
+
+#footer{
+	width:960px;
+	height:50px;
+	margin: 0 auto;
+	background:url(../../images/mod-contacto/sombra-sup-contac.png) no-repeat;
+	padding:15px 0 10px 0px;
+}
+#footer .container{
+	margin:0 auto;
+	width:910px;
+	text-align:center;
+}
+
+/* MESSAGE BOXES
+/////////////////////////////*/
+
+.message-box { text-align: center; padding: 5px; color:#545454; width:80%;  margin:5px auto; }
+
+.msj_clean { background-color: #efefef; border-top: 2px solid #dedede; border-bottom: 2px solid #dedede; }
+.msj_info  { background-color: #f7fafd; border-top: 2px solid #b5d3ff; border-bottom: 2px solid #b5d3ff; }
+.msj_ok    { background-color: #d7f7c4; border-top: 2px solid #82cb2f; border-bottom: 2px solid #82cb2f; }
+.msj_alert { background-color: #fef5be; border-top: 2px solid #fdd425; border-bottom: 2px solid #fdd425; }
+.msj_error { background-color: #ffcdd1; border-top: 2px solid #e10c0c; border-bottom: 2px solid #e10c0c; }

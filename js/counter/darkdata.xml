@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<DigitalVisitorCounter>
+	<settings		
+		widgetWidth = "220"
+		numberOfLedDigits = "7"
+		description = "VISITORS SO FAR!"
+		descriptionAlign = "center"
+		scriptPath = "counter.txt"
+	/>
+	<style
+		backGroundGradientTopColor = "0x505050"
+		backGroundGradientBottomColor = "0x181818"
+		backgroundStrokeColor = "0x353535"		
+		ledScreenGradientTopAndBottomColor = "0x094964"
+		ledScreenGradientTopMiddleAndBottomMiddle = "0x00344a"
+		ledScreenGradientMiddleColor = "0x002535"
+		ledScreenStrokeColor = "0x07181f"				
+		ledScreenBgTextColor = "0x47b7e6"
+		ledScreenBgTextAlpha = "0.1"		
+		textGlow = "on"
+		textColor = "0xb4e8fe"
+		labelTextColor = "0x6e6e6e"
+	/>
+	<filters>
+		<ledTextFilter
+			color = "0x20d2ff"
+			alpha = "0.75"
+			blurX = "5"
+			blurY = "5"
+			strength = "1"
+			quality = "2"
+			ineer = "false"
+			knockout = "false"					
+		/>
+	</filters>
+</DigitalVisitorCounter>

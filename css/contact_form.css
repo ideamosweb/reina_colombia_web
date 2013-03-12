@@ -1,0 +1,67 @@
+
+/* CONTACT */
+form{margin:0; padding:0;}
+fieldset{border:0px;}
+#contactform{margin:0 auto; position:relative;}
+#contactform label{}
+label.sp { width:3px;}
+span.error{color:red;text-align:left; font-size:11px; display:block; vertical-align:top}
+
+#message{ margin-left:0px;}
+#message h2	{}
+#message p{margin:6px 0px; }
+
+#contact label{margin-top:3px; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#FFF;}
+
+#contact .text-input{ 
+	margin:4px 8px 10px 0px;
+	width: 280px;
+	height:20px; 
+	padding:4px 2px;
+	border:solid 1px #d4d4d4;
+	vertical-align:middle;
+	background-color:#f4f4f4;
+	box-shadow: inset 0px 2px 5px #d7d7d7;
+	-moz-box-shadow: inset 0px 2px 5px #d7d7d7;
+	-webkit-box-shadow: inset 0px 2px 5px #d7d7d7;
+	}
+	
+#contact .select-input{ 
+	margin:4px 8px 10px 0px;
+	width: 280px;
+	height:32px; 
+	padding:4px 2px;
+	border:solid 1px #d4d4d4;
+	vertical-align:middle;
+	background-color:#f4f4f4;
+	box-shadow: inset 0px 2px 5px #d7d7d7;
+	-moz-box-shadow: inset 0px 2px 5px #d7d7d7;
+	-webkit-box-shadow: inset 0px 2px 5px #d7d7d7;
+}
+
+#contact textarea.text-input{ 
+	margin:4px 8px 10px 0px;
+	padding: 4px 2px;
+	height:60px;
+	width:280px;
+	border:solid 1px #d4d4d4;
+	vertical-align:top;
+	box-shadow: inset 0px 2px 5px #d7d7d7;
+	-moz-box-shadow: inset 0px 2px 5px #d7d7d7;
+	-webkit-box-shadow: inset 0px 2px 5px #d7d7d7;
+	}
+
+#contact .button{
+text-transform:uppercase; color:#292929; padding:9px 0px; width:108px; border:solid 1px #dfdfdf;  background-color:#f8f8f8; cursor:pointer; margin-top:0px; font-size:11px; font-family:Arial;  }
+#contact .button:hover{background-color:#f1f1f1}
+#map{margin-bottom:40px;}
+
+/* --CALENDAR-- */
+
+.date {
+    background: url(../images/calendar2.png) repeat scroll 0 0 transparent;
+    float: left;
+    height: 18px;
+    margin: 2px 0 0 6px;
+    width: 18px;
+}
